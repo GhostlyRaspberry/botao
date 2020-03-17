@@ -2,6 +2,7 @@ body{
   background-color: #f2f2f2;
   font-family: 'Poppins', sans-serif;
   margin-top: 0px;
+  overflow: hidden;
 }
 
 /*Título da página*/
@@ -104,7 +105,7 @@ p, li{
   left: 0;
   top: 0;
   width: 100%;
-  height: 86.5%; /* Por alguma razão 100% passava do limite da página */
+  height: 100%;
   background-color: rgba(0,0,0,0.9);
 }
 
