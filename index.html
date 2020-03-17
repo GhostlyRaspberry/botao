@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Botão Quase Inútil v2.0</title>
+		<link rel="stylesheet" type="text/CSS" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+		<meta lang="pt-BR" />
+		<meta charset="utf-8"/>
+	</head>
+  <body id="body">
+    <div class="container">
+      <h1>Botão praticamente inútil do Leo v2.0</h1>
+        <div class="redButton">
+          <span class="tooltip" id="textoTooltip">O que será que ele faz?</span>
+          <br>
+          <button id="botao" onclick="botaoQuaseInutil()" onmousedown="botaoApertar()" onmouseup="botaoSoltar()" onmouseover="tooltipAparecer()" onmouseout="tooltipDesaparecer()"></button>
+        </div>
+      <h2 id="vezesVerificado"></h2>
+      <h3 id="lenda"></h3>
+    </div>
+
+		<a id="linkChangelog"> Changelog </a>
+
+		<div id="myModal" class="modal">
+			<span class="close">&times;</span>
+			<div class="modal-content">
+				<div class="box">
+					<h4>CHANGELOG DA VERSÃO 2.0</h4>
+					<p>
+						Antes de mais nada, vamos verificar o que foi alterado desde a última entrega:
+						<ul>
+							<li>O total de eventos de javascript inclusos no documento aumentou de 2 para 7, sendo eles: “click”, “mousedown”, “mouseup”, “mouseover”, “mouseout”, “keydown” e “keyup”;</li>
+							<li>O changelog introduzido foi introduzido e será aberto assim que a página é carregada, porém também pode ser acessado no canto superior esquerdo da página;</li>
+							<li>Novos comentários foram adicionados nos documentos “script.js” e “style.css” para ajudar no entendimento do código;</li>
+							<li>Íconde do navegador (favicon) foi criado e incorporado à página;</li>
+							<li><span style="color:#f5493d; font-weight:bold">NOVO EASTER EGG PARA O CORONA VIRUS.</span></li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+  </body>
+</html>
