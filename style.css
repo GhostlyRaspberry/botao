@@ -26,7 +26,7 @@ h3{
 h4{
   margin: 15px 0;
   font-size: 1.8em;
-  color: #26798c;
+  color: #2c8ba0;
 }
 
 /*Texto do Changelog*/
@@ -47,7 +47,7 @@ p, li{
 }
 
 /*Estilo para o Botão Vermelho*/
-.redButton button{
+.BotaoVermelho button{
   cursor: pointer;
   padding: 5em 5em;
   border: none;
@@ -57,9 +57,8 @@ p, li{
   box-shadow: 0 9px #aa1409;
 }
 
-
 /*Elementos do Tooltip do botão*/
-.redButton .tooltip {
+.BotaoVermelho .tooltip {
   transform: translate(-50%, -55%);
   width: 160px;
   background-color: #555;
@@ -73,7 +72,7 @@ p, li{
   z-index: 1;
 }
 
-.redButton .tooltip::after {
+.BotaoVermelho .tooltip::after {
   content: "";
   position: absolute;
   top: 100%;
@@ -89,16 +88,14 @@ p, li{
   opacity: 0;
 }
 
-
-
 /*Link para abrir o Changelog*/
 #linkChangelog {
   cursor: pointer;
-  color: #26798c;
+  color: #2c8ba0;
   text-decoration: none;
 }
 
-/* The Modal (background) */
+/* Background do Modal */
 .modal {
   display: none;
   position: absolute;
@@ -111,16 +108,19 @@ p, li{
   background-color: rgba(0,0,0,0.9);
 }
 
-/* Modal Content (image) */
+/* Conteúdo do Modal */
 .modal-content {
   margin: auto;
   display: block;
   width: 80%;
   max-width: 700px;
+  background-color: #fff;
+  padding: 25px;
+  text-align: left;
 }
 
 
-/* Add Animation */
+/* Animação do modal */
 .modal-content {
   animation-name: zoom;
   animation-duration: 0.6s;
@@ -131,7 +131,7 @@ p, li{
   to {transform:scale(1)}
 }
 
-/* The Close Button */
+/* Botão de fechar o modal*/
 .close {
   position: absolute;
   top: 15px;
@@ -144,10 +144,4 @@ p, li{
 .close:hover {
   color: #bbb;
   cursor: pointer;
-}
-
-.box{
-background-color: #fff;
-padding: 25px;
-text-align: left;
 }
